@@ -2,8 +2,8 @@
     "name": "hmmx-test-2",
     "version": "0.1.0",
     "dependencies": {
-        "montage": "~0.15.0",
-        "digit": "~0.5.0"
+        "montage": "montagejs/montage",
+        "hmmx": "montagestudio/hmmx"
     },
     "devDependencies": {
         "montage-testing": "~0.4.0"
