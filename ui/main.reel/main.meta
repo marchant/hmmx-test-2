@@ -1,0 +1,28 @@
+{
+  "objectDescriptor_component_reference": {
+    "prototype": "montage/core/meta/object-descriptor-reference",
+    "properties": {
+      "valueReference": {
+        "objectDescriptorName": "Component",
+        "objectDescriptorModule": {
+          "%": "montage/ui/component.meta"
+        }
+      }
+    }
+  },
+  "root": {
+    "prototype": "montage/core/meta/module-object-descriptor",
+    "properties": {
+      "name": null,
+      "parent": {"@": "objectDescriptor_component_reference"},
+      "propertyDescriptorGroups": {
+        "Main": []
+      },
+      "maxAge": 240,
+      "module": {
+        "%": "ui/main.reel"
+      },
+      "exportName": "Main"
+    }
+  }
+}
