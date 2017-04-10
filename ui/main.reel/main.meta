@@ -14,6 +14,9 @@
     "prototype": "montage/core/meta/module-object-descriptor",
     "properties": {
       "name": null,
+      "objectDescriptorModule": {
+        "%": "ui/main.reel/main.meta"
+      },
       "parent": {"@": "objectDescriptor_component_reference"},
       "propertyDescriptorGroups": {
         "Main": []

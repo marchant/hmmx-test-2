@@ -2,21 +2,112 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Main</title>
-
+    <title>
+        Main
+    </title>
     <link rel="stylesheet" href="main.css">
-
     <script type="text/montage-serialization">
-        {
-            "owner": {
-                "properties": {
-                    "element": {"#": "main"}
-                }
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "main"}
+            }
+        },
+        "formField": {
+            "prototype": "hmmx/ui/form-field.reel",
+            "properties": {
+                "element": {"#": "formField"}
+            }
+        },
+        "grid": {
+            "prototype": "hmmx/ui/grid.reel",
+            "properties": {
+                "element": {"#": "grid"}
+            }
+        },
+        "gridCell1": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell1"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "hidden": null,
+                "lang": null,
+                "style": null,
+                "width": "2"
+            }
+        },
+        "gridCell2": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell2"},
+                "hidden": null,
+                "lang": null,
+                "style": null
+            }
+        },
+        "gridRow": {
+            "prototype": "hmmx/ui/grid-row.reel",
+            "properties": {
+                "element": {"#": "gridRow"},
+                "lang": null,
+                "spellcheck": null,
+                "tabindex": null
+            }
+        },
+        "icon": {
+            "prototype": "hmmx/ui/icon.reel",
+            "properties": {
+                "element": {"#": "icon"},
+                "label": "Important",
+                "src": "../../assets/images/icon-important.png"
+            }
+        },
+        "radioButton1": {
+            "prototype": "hmmx/ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "radioButton1"},
+                "label": "Yes",
+                "radioButtonGroup": {"@": "radioButtonGroup"},
+                "value": "Yes"
+            }
+        },
+        "radioButton2": {
+            "prototype": "hmmx/ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "radioButton2"},
+                "label": "No",
+                "radioButtonGroup": {"@": "radioButtonGroup"},
+                "value": "No"
+            }
+        },
+        "radioButtonGroup": {
+            "prototype": "hmmx/ui/radio-button-group.reel",
+            "properties": {
+                "element": {"#": "radioButtonGroup"}
             }
         }
+    }
     </script>
 </head>
 <body>
-    <div data-montage-id="main" data-montage-skin="light" class="Main"></div>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <div data-montage-id="grid">
+            <div data-montage-id="gridRow">
+                <div data-montage-id="gridCell1">
+                    <div data-montage-id="icon"></div>
+                </div>
+                <div data-montage-id="gridCell2">
+                    <div data-montage-id="formField">
+                        <div data-montage-id="radioButtonGroup">
+                            <input type="radio" data-montage-id="radioButton1">
+                            <input type="radio" data-montage-id="radioButton2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
