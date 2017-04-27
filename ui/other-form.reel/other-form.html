@@ -10,16 +10,31 @@
                 "element": {"#": "owner"}
             }
         },
+        "formField": {
+            "prototype": "hmmx/ui/form-field.reel",
+            "properties": {
+                "element": {"#": "formField"}
+            }
+        },
         "grid": {
             "prototype": "hmmx/ui/grid.reel",
             "properties": {
                 "element": {"#": "grid"}
             }
         },
+        "gridCell": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell"}
+            }
+        },
         "gridCell1": {
             "prototype": "hmmx/ui/grid-cell.reel",
             "properties": {
-                "element": {"#": "gridCell1"}
+                "element": {"#": "gridCell1"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             }
         },
         "gridCell2": {
@@ -28,24 +43,76 @@
                 "element": {"#": "gridCell2"}
             }
         },
+        "gridCell3": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell3"}
+            }
+        },
         "gridRow": {
             "prototype": "hmmx/ui/grid-row.reel",
             "properties": {
                 "element": {"#": "gridRow"}
             }
         },
+        "gridRow2": {
+            "prototype": "hmmx/ui/grid-row.reel",
+            "properties": {
+                "element": {"#": "gridRow2"},
+                "lang": null,
+                "spellcheck": null,
+                "tabindex": null
+            }
+        },
         "header": {
             "prototype": "montage/ui/text.reel",
             "properties": {
                 "element": {"#": "header"},
-                "value": "Header Text"
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "Header Text 1"
             }
         },
         "header2": {
             "prototype": "montage/ui/text.reel",
             "properties": {
                 "element": {"#": "header2"},
-                "value": "Header Text"
+                "value": "Header Text 2"
+            }
+        },
+        "image": {
+            "prototype": "hmmx/ui/image.reel",
+            "properties": {
+                "element": {"#": "image"},
+                "crossOrigin": null,
+                "lang": null,
+                "spellcheck": null,
+                "tabindex": null
+            }
+        },
+        "radioButton1": {
+            "prototype": "hmmx/ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "radioButton1"},
+                "label": "Yes",
+                "radioButtonGroup": {"@": "radioButtonGroup"},
+                "value": "Yes"
+            }
+        },
+        "radioButton2": {
+            "prototype": "hmmx/ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "radioButton2"},
+                "label": "No",
+                "radioButtonGroup": {"@": "radioButtonGroup"},
+                "value": "No"
+            }
+        },
+        "radioButtonGroup": {
+            "prototype": "hmmx/ui/radio-button-group.reel",
+            "properties": {
+                "element": {"#": "radioButtonGroup"}
             }
         }
     }
@@ -72,6 +139,19 @@
         It includes example code and guidance for layout, typography, colour, images, icons, forms, buttons and data.
                         </p>
                     </div>
+                </div>
+            </div>
+            <div data-montage-id="gridRow2">
+                <div data-montage-id="gridCell">
+                    <div data-montage-id="formField">
+                        <div data-montage-id="radioButtonGroup">
+                            <input type="radio" data-montage-id="radioButton1">
+                            <input type="radio" data-montage-id="radioButton2">
+                        </div>
+                    </div>
+                </div>
+                <div data-montage-id="gridCell3">
+                    <img data-montage-id="image">
                 </div>
             </div>
         </div>
