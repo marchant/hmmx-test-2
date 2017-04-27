@@ -32,6 +32,12 @@
                 "draggable": "true"
             }
         },
+        "gridCell": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell"}
+            }
+        },
         "gridCell1": {
             "prototype": "hmmx/ui/grid-cell.reel",
             "properties": {
@@ -44,10 +50,37 @@
                 "element": {"#": "gridCell2"}
             }
         },
+        "gridCell3": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell3"}
+            }
+        },
         "gridRow": {
             "prototype": "hmmx/ui/grid-row.reel",
             "properties": {
                 "element": {"#": "gridRow"}
+            }
+        },
+        "gridRow2": {
+            "prototype": "hmmx/ui/grid-row.reel",
+            "properties": {
+                "element": {"#": "gridRow2"}
+            }
+        },
+        "otherForm": {
+            "prototype": "ui/other-form.reel",
+            "properties": {
+                "element": {"#": "otherForm"},
+                "hidden": null,
+                "lang": null,
+                "style": null
+            }
+        },
+        "otherForm2": {
+            "prototype": "ui/other-form.reel",
+            "properties": {
+                "element": {"#": "otherForm2"}
             }
         }
     }
@@ -62,6 +95,14 @@
                 </div>
                 <div data-montage-id="gridCell2">
                     <div data-montage-id="address2"></div>
+                </div>
+            </div>
+            <div data-montage-id="gridRow2">
+                <div data-montage-id="gridCell">
+                    <div data-montage-id="otherForm"></div>
+                </div>
+                <div data-montage-id="gridCell3">
+                    <div data-montage-id="otherForm2"></div>
                 </div>
             </div>
         </div>

@@ -9,12 +9,72 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "grid": {
+            "prototype": "hmmx/ui/grid.reel",
+            "properties": {
+                "element": {"#": "grid"}
+            }
+        },
+        "gridCell1": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell1"}
+            }
+        },
+        "gridCell2": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell2"}
+            }
+        },
+        "gridRow": {
+            "prototype": "hmmx/ui/grid-row.reel",
+            "properties": {
+                "element": {"#": "gridRow"}
+            }
+        },
+        "header": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "header"},
+                "value": "Header Text"
+            }
+        },
+        "header2": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "header2"},
+                "value": "Header Text"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="OtherForm">
+        <div data-montage-id="grid">
+            <div data-montage-id="gridRow">
+                <div data-montage-id="gridCell1">
+                    <h2 data-montage-id="header" class="bold-medium"></h2>
+                    <div class="text">
+                        <p>
+                            This guide shows how to make your service look consistent with the rest of GOV.UK. 
+        It includes example code and guidance for layout, typography, colour, images, icons, forms, buttons and data.
+                        </p>
+                    </div>
+                </div>
+                <div data-montage-id="gridCell2">
+                    <h2 data-montage-id="header2" class="bold-medium"></h2>
+                    <div class="text">
+                        <p>
+                            This guide shows how to make your service look consistent with the rest of GOV.UK. 
+        It includes example code and guidance for layout, typography, colour, images, icons, forms, buttons and data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
