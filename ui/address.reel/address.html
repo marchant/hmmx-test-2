@@ -24,7 +24,8 @@
         "formField": {
             "prototype": "hmmx/ui/form-field.reel",
             "properties": {
-                "element": {"#": "formField"}
+                "element": {"#": "formField"},
+                "label": "Country"
             }
         },
         "formField2": {
@@ -76,8 +77,11 @@
                 "element": {"#": "gridCell5"}
             }
         },
-        "gridCell6": {
-            "prototype": "hmmx/ui/grid-cell.reel"
+        "gridCell7": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell7"}
+            }
         },
         "gridRow": {
             "prototype": "hmmx/ui/grid-row.reel",
@@ -112,6 +116,25 @@
                 "tabindex": null
             }
         },
+        "gridRow5": {
+            "prototype": "hmmx/ui/grid-row.reel",
+            "properties": {
+                "element": {"#": "gridRow5"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "spellcheck": null
+            }
+        },
+        "postcodeFormField": {
+            "prototype": "hmmx/ui/form-field.reel",
+            "properties": {
+                "element": {"#": "postcodeFormField"},
+                "hidden": null,
+                "isMandatory": true,
+                "label": "Postcode"
+            }
+        },
         "textfield": {
             "prototype": "hmmx/ui/text-field.reel",
             "properties": {
@@ -134,6 +157,12 @@
             "prototype": "hmmx/ui/text-field.reel",
             "properties": {
                 "element": {"#": "textfield4"}
+            }
+        },
+        "textfield5": {
+            "prototype": "hmmx/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textfield5"}
             }
         }
     }
@@ -167,6 +196,13 @@
                 <div data-montage-id="gridCell5">
                     <div data-montage-id="formField">
                         <input type="text" data-montage-id="textfield4">
+                    </div>
+                </div>
+            </div>
+            <div data-montage-id="gridRow5">
+                <div data-montage-id="gridCell7">
+                    <div data-montage-id="postcodeFormField">
+                        <input type="text" data-montage-id="textfield5">
                     </div>
                 </div>
             </div>
