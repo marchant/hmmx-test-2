@@ -36,19 +36,23 @@
             "prototype": "hmmx/ui/grid-cell.reel",
             "properties": {
                 "element": {"#": "gridCell"},
-                "columnSpan": "2"
+                "columnSpan": "3",
+                "contenteditable": "true",
+                "draggable": "true"
             }
         },
         "gridCell1": {
             "prototype": "hmmx/ui/grid-cell.reel",
             "properties": {
-                "element": {"#": "gridCell1"}
+                "element": {"#": "gridCell1"},
+                "dir": "ltr"
             }
         },
         "gridCell2": {
             "prototype": "hmmx/ui/grid-cell.reel",
             "properties": {
-                "element": {"#": "gridCell2"}
+                "element": {"#": "gridCell2"},
+                "columnSpan": "2"
             }
         },
         "gridRow": {
@@ -67,6 +71,8 @@
             "prototype": "ui/other-form.reel",
             "properties": {
                 "element": {"#": "otherForm"},
+                "contenteditable": "true",
+                "draggable": "true",
                 "hidden": null,
                 "lang": null,
                 "style": null
