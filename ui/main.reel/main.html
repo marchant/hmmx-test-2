@@ -35,7 +35,8 @@
         "gridCell": {
             "prototype": "hmmx/ui/grid-cell.reel",
             "properties": {
-                "element": {"#": "gridCell"}
+                "element": {"#": "gridCell"},
+                "columnSpan": "2"
             }
         },
         "gridCell1": {
@@ -48,12 +49,6 @@
             "prototype": "hmmx/ui/grid-cell.reel",
             "properties": {
                 "element": {"#": "gridCell2"}
-            }
-        },
-        "gridCell3": {
-            "prototype": "hmmx/ui/grid-cell.reel",
-            "properties": {
-                "element": {"#": "gridCell3"}
             }
         },
         "gridRow": {
@@ -76,12 +71,6 @@
                 "lang": null,
                 "style": null
             }
-        },
-        "otherForm2": {
-            "prototype": "ui/other-form.reel",
-            "properties": {
-                "element": {"#": "otherForm2"}
-            }
         }
     }
     </script>
@@ -100,9 +89,6 @@
             <div data-montage-id="gridRow2">
                 <div data-montage-id="gridCell">
                     <div data-montage-id="otherForm"></div>
-                </div>
-                <div data-montage-id="gridCell3">
-                    <div data-montage-id="otherForm2"></div>
                 </div>
             </div>
         </div>
