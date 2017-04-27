@@ -9,12 +9,168 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "BuildingAndStreet": {
+            "prototype": "hmmx/ui/form-field.reel",
+            "properties": {
+                "element": {"#": "BuildingAndStreet"},
+                "hidden": null,
+                "isMandatory": true,
+                "label": "Building and street",
+                "lang": null,
+                "style": null
+            }
+        },
+        "formField": {
+            "prototype": "hmmx/ui/form-field.reel",
+            "properties": {
+                "element": {"#": "formField"}
+            }
+        },
+        "formField2": {
+            "prototype": "hmmx/ui/form-field.reel",
+            "properties": {
+                "element": {"#": "formField2"},
+                "label": "Town or city"
+            }
+        },
+        "grid": {
+            "prototype": "hmmx/ui/grid.reel",
+            "properties": {
+                "element": {"#": "grid"}
+            }
+        },
+        "gridCell": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell"}
+            }
+        },
+        "gridCell1": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell1"}
+            }
+        },
+        "gridCell2": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell2"}
+            }
+        },
+        "gridCell3": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell3"}
+            }
+        },
+        "gridCell4": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell4"}
+            }
+        },
+        "gridCell5": {
+            "prototype": "hmmx/ui/grid-cell.reel",
+            "properties": {
+                "element": {"#": "gridCell5"}
+            }
+        },
+        "gridCell6": {
+            "prototype": "hmmx/ui/grid-cell.reel"
+        },
+        "gridRow": {
+            "prototype": "hmmx/ui/grid-row.reel",
+            "properties": {
+                "element": {"#": "gridRow"}
+            }
+        },
+        "gridRow2": {
+            "prototype": "hmmx/ui/grid-row.reel",
+            "properties": {
+                "element": {"#": "gridRow2"},
+                "lang": null,
+                "spellcheck": null,
+                "tabindex": null
+            }
+        },
+        "gridRow3": {
+            "prototype": "hmmx/ui/grid-row.reel",
+            "properties": {
+                "element": {"#": "gridRow3"}
+            }
+        },
+        "gridRow4": {
+            "prototype": "hmmx/ui/grid-row.reel",
+            "properties": {
+                "element": {"#": "gridRow4"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "lang": null,
+                "spellcheck": null,
+                "tabindex": null
+            }
+        },
+        "textfield": {
+            "prototype": "hmmx/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textfield"}
+            }
+        },
+        "textfield2": {
+            "prototype": "hmmx/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textfield2"}
+            }
+        },
+        "textfield3": {
+            "prototype": "hmmx/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textfield3"}
+            }
+        },
+        "textfield4": {
+            "prototype": "hmmx/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textfield4"}
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Address">
+        <div data-montage-id="grid">
+            <div data-montage-id="gridRow">
+                <div data-montage-id="gridCell1">
+                    <div data-montage-id="BuildingAndStreet">
+                        <input type="text" data-montage-id="textfield">
+                    </div>
+                </div>
+            </div>
+            <div data-montage-id="gridRow2">
+                <div data-montage-id="gridCell">
+                    <input type="text" data-montage-id="textfield2">
+                </div>
+                <div data-montage-id="gridCell3"></div>
+            </div>
+            <div data-montage-id="gridRow3">
+                <div data-montage-id="gridCell4">
+                    <div data-montage-id="formField2">
+                        <input type="text" data-montage-id="textfield3">
+                    </div>
+                </div>
+                <div data-montage-id="gridCell2"></div>
+            </div>
+            <div data-montage-id="gridRow4">
+                <div data-montage-id="gridCell5">
+                    <div data-montage-id="formField">
+                        <input type="text" data-montage-id="textfield4">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
